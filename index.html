@@ -10,21 +10,27 @@
     <title>Weather App Practice 1</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container mt-4">
         <h2 class="text-center">Weather App #1</h2>
-        <p class="text-center">Enter city name</p>
+        <p class="small text-center mt-3 mb-1">Enter city name to get weather conditions</p>
+        <form>
+            <div class="input-group mb-3">
+                <input type="text" class="input-city form-control" placeholder="city name" aria-label="City name">
+              </div>        
+            </form>
         <div class="card" style="width: 18rem;">
             <img src="./img/night.svg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div class="card-body text-center py-0">
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <img src="./img//icons/14.svg">
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">An item</li>
-              <li class="list-group-item">A second item</li>
-              <li class="list-group-item">A third item</li>
+            <ul class="list-group list-group-flush text-center">
+              <li class="city-name list-group-item">City, Country</li>
+              <li class="weather-condition list-group-item">A second item</li>
+              <li class="temperature list-group-item">A third item</li>
             </ul>
           </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
