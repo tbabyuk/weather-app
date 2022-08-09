@@ -5,10 +5,14 @@
 }
 
 body {
-    background-color:rgb(97, 165, 193)
+    background-color:rgb(20, 110, 149)
 }
 
-
 .container {
-    max-width: fit-content;
+    max-width: 400px;
+}
+
+.input-city {
+    max-width: 286px;
+    margin: auto;
 }
