@@ -13,6 +13,9 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     const city = inputCity.value.trim();
     getData(city);
+    
+    // save city to local storage
+    localStorage.setItem('city', city);
     form.reset();
 });
 
@@ -62,4 +65,10 @@ const updateUI = (cityInfo, weather) => {
     timeOfDayIcon.setAttribute("src", time);
     weatherIcon.setAttribute("src", `./img/icons/${weather.WeatherIcon}.svg`);
     card.classList.remove("d-none");
+}
+
+
+// fetch data if a city is already in local storage
+if(localStorage.city) {
+    getData(localStorage.city)
 }
