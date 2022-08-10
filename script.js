@@ -40,8 +40,8 @@ const getCity = async (city) => {
 const getWeather = async(cityKey) => {
     const base = "https://dataservice.accuweather.com/currentconditions/v1/";
     const query = `${cityKey}?apikey=${key}`;
-    const response = await fetch(base + query);
-    const data = await response.json();
+    const res = await fetch(base + query);
+    const data = await res.json();
     return data[0];
 }
 
