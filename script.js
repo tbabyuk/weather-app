@@ -21,7 +21,7 @@ form.addEventListener("submit", (e) => {
 
 
 // AccuWeather API key
-const key = "pNzFTkUXR7bbRaZLnU45IcqAI16GAzP7";
+const key = "FkYAVSBqbND3Tv8Y7IG4zrLqjsb0Gehy";
 
 
 // get city info based on user query
